@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBBKq9Moj4eOXnCUraRCdRGZ84tksGNl1g",
+    authDomain: "umbcpubquiz.firebaseapp.com",
+    databaseURL: "https://umbcpubquiz.firebaseio.com",
+    projectId: "umbcpubquiz",
+    storageBucket: "umbcpubquiz.appspot.com",
+    messagingSenderId: "600186806750",
+    appId: "1:600186806750:web:abb2d0ee83ab2d4f23fd4f",
+    measurementId: "G-XFQLY8RSBV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+<script src="index2.js"></script>
+
+<h1>UMBC Pub Quiz</h1>
+<input type="text" placeholder="Team Name" id="nameField">
+<br>
+<input class="answer" type="text" placeholder="Answer" id="answerField">
+<br>
+<button id="submitBtn" onclick="writeData()">Submit</button>
+<br>
+<p style="display:none;" id="error">Please input your Team Name to submit a valid response!</p>
+
+
+</body>
+</html>

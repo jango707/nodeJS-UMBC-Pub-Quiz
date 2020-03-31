@@ -1,0 +1,15 @@
+{
+  "name": "pub_quiz",
+  "version": "1.0.0",
+  "description": "app for UMBC pub Quiz",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "JANGO",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
