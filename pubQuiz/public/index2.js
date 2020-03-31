@@ -1,9 +1,9 @@
 function writeData(){
-    var today = new Date();
-    var timestamp = "--" + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    //var today = new Date();
+    //var timestamp = "--" + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     if(document.getElementById("nameField").value != ""){
-        firebase.database().ref("Answers/answer"+timestamp).update({
-            TeamName: document.getElementById("nameField").value,
+        firebase.database().ref(document.getElementById("nameField").value).update({
+            
             Answer: document.getElementById("answerField").value
             
         });
